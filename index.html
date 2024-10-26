@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next.js Practice Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title Section -->
+  <header>
+    <img src="Blue Yellow Futuristic Virtual Technology Blog Banner.jpg" alt="Title Image">
+    <h1>Next.js Practice Quiz</h1>
+    <p>Made By Nida Rizwan</p>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login-section" class="box">
+    <h2>Login to Start Quiz</h2>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    <input type="email" id="email" placeholder="Enter Your Email" required>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz-section" class="hidden box">
+    <div id="question-container">
+      <p id="question"></p>
+      <input type="text" id="answer" placeholder="Your Answer">
+      <button onclick="submitAnswer()">Submit</button>
+    </div>
+  </section>
+
+  <!-- Result Section -->
+  <section id="result-section" class="hidden box">
+    <p id="result-text"></p>
+    <p id="score"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
